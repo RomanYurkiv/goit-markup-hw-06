@@ -6,6 +6,8 @@
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -142,14 +144,22 @@ address {
 .main-section {
     margin: 0 auto;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mobile.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     width: 100%;
+}
+
+@media (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+    .main-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mobile-2x.jpg);
+    }
 }
 
 .title-container {
@@ -163,12 +173,14 @@ address {
     margin: 0 auto;
     color: #FFF;
     text-align: center;
-    font-size: 56px;
     font-weight: 700;
-    line-height: 1.07;
     letter-spacing: 0.02em;
-    margin-bottom: 48px;
-    max-width: 496px;
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 72px;
+    margin-left: 36px;
+    margin-right: 36px;
+    max-width: 288px;
 }
 
 .order-button {
@@ -815,16 +827,17 @@ span {
         max-width: 318px;
     }
 
-            /* MAIN */
+
+    /* MAIN */
     
-        /* skill section */
 
-        /* team section */
-
-        /* portfolio section */
+    /* skill section */
 
 
-        
+    /* team section */
+
+
+    /* portfolio section */
 
 
 }
@@ -835,7 +848,34 @@ span {
         max-width: 766px;
     }
     
-        /* skill section */
+            
+    /* MAIN */
+
+
+    .main-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet-2x.jpg);
+        }
+    }
+
+    .main-title {
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+
+
+    /* skill section */
+
 
     .skills-list {
         gap: 72px 24px;
@@ -849,13 +889,17 @@ span {
         text-align: start;
     }
 
-        /* team section */
+
+    /* team section */
+
 
     .team-list {
         gap: 64px 24px;
     }
 
-        /* portfolio section */
+
+    /* portfolio section */
+
 
     .portfolio-item {
         width: calc((100% - 24px) / 2)
@@ -868,13 +912,37 @@ span {
 
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
     
     .container {
         max-width: 1158px;
     }
 
-        /* skill section */
+
+    /* MAIN */
+    
+    
+    .main-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+        }
+    }
+            
+    .main-title {
+        margin-bottom: 48px;
+    }
+
+
+    /* skill section */
+
 
     .skills-section {
         padding-top: 120px;
@@ -900,7 +968,9 @@ span {
         font-weight: 400px;
     }
 
-        /* team section */
+
+    /* team section */
+
 
     .team-section {
         padding-top: 120px;
@@ -911,7 +981,9 @@ span {
         width: calc((100% 24px * 3) / 4);
     }
 
-        /* portfolio section */
+
+    /* portfolio section */
+
 
     .portfolio-section {
         padding-top: 120px;

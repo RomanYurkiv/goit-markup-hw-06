@@ -6,11 +6,11 @@
 
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
 }
 
-h1,
+h1, 
 h2,
 h3,
 h4,
@@ -471,7 +471,7 @@ address {
 }
 
 .portfolio-item {
-    max-width: 264px;
+    max-width: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -545,7 +545,6 @@ address {
     display: flex;
     justify-content: center;
     background-color: #2e2f42;
-    /* padding: 100px 0; */
     padding: 96px 0;
 }
 
@@ -593,21 +592,19 @@ address {
 .footer-container {
     width: 100%;
     display: inline-flex;
-    /* align-items: baseline; */
     flex-direction: column;
 }
 
 .footer-logo-container {
     display: flex;
     flex-direction: column;
-    /* margin-right: 120px; */
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .footer-icon-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .icon-footer {
@@ -1067,22 +1064,35 @@ span {
     /* FOOTER */
 
     .footer-container {
+        flex-wrap: wrap;
         display: flex;
         flex-direction: row;
-        gap: 24px;
-        align-items: baseline;
+        max-width: 584px;
+        gap:72px 24px;
     }
 
-    .footer-container {
-
+    .footer-logo {
+        justify-content: flex-start;
     }
 
-    .fotter-bottom {
-        flex-direction: row;
+    .footer-logo-container {
+        margin-bottom: 0;
+    }
+
+    .footer-icon-container {
+        margin-bottom: 0px;
+    }
+    
+    .footer-social {
+        justify-content: flex-start;
     }
 
     .footer-form {
         flex-direction: row;
+    }
+
+    .footer-input {
+        min-width: 264px;
     }
 
     /* BACKDROP */
@@ -1226,6 +1236,36 @@ span {
 
     .modal {
         top: 80px;
+    }
+
+    /* FOOTER */
+
+
+    .footer-container {
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    .footer-logo {
+
+    }
+
+    .footer-logo-container {
+        margin-right: 120px;
+    }
+
+    .footer-icon-container {
+        margin-right: 80px;
+    }
+    
+    .footer-social {
+
+    }
+
+    .footer-form {
+    }
+
+    .footer-input {
     }
 
 }

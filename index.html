@@ -60,63 +60,65 @@
         <!-- MOBILE MENU -->
 
         <div class="mob-menu ">
-            <button class="mob-close-button" type="button">
-                <svg class="close-button-svg" width="8" height="8">
-                    <use class="close-btn-svg" href="./images/icons.svg#icon-close_button" width="8px" height="8px">
-                    </use>
-                </svg>
-            </button>
-            <ul class="mob-list">
-                <li class="mob-item ">
-                    <a href="./index.html" class="mob-link mob-current">Studio</a>
-                </li>
-                <li class="mob-item">
-                    <a href="" class="mob-link">Portfolio</a>
-                </li>
-                <li class="mob-item">
-                    <a href="" class="mob-link">Contacts</a>
-                </li>
-            </ul>
-            <address class="mob-address">
-                <ul class="mob-address-list">
-                    <li class="mob-address-item">
-                        <a href="tel:+110001111111" class="mob-email address-current">+11 (000) 111-11-11</a>
+            <div class="container mob-conteiner">
+                <button class="mob-close-button" type="button">
+                    <svg class="close-button-svg" width="8" height="8">
+                        <use class="close-btn-svg" href="./images/icons.svg#icon-close_button" width="8px" height="8px">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="mob-list">
+                    <li class="mob-item ">
+                        <a href="./index.html" class="mob-link mob-current">Studio</a>
                     </li>
-                    <li class="mob-address-item">
-                        <a href="mailto:info@devstudio.com" class="mob-email">info@devstudio.com</a>
+                    <li class="mob-item">
+                        <a href="" class="mob-link">Portfolio</a>
+                    </li>
+                    <li class="mob-item">
+                        <a href="" class="mob-link">Contacts</a>
                     </li>
                 </ul>
-            </address>
-            <ul class="mob-icon-list">
-                <li class="icon-list-item">
-                    <a href="" class="team-member-link">
-                        <svg class="team-member-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="icon-list-item">
-                    <a href="" class="team-member-link">
-                        <svg class="team-member-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="icon-list-item">
-                    <a href="" class="team-member-link">
-                        <svg class="team-member-icon " width="16" height="16">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="icon-list-item">
-                    <a href="" class="team-member-link">
-                        <svg class="team-member-icon " width="16" height="16">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                <address class="mob-address">
+                    <ul class="mob-address-list">
+                        <li class="mob-address-item">
+                            <a href="tel:+110001111111" class="mob-email address-current">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mob-address-item">
+                            <a href="mailto:info@devstudio.com" class="mob-email">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-icon-list">
+                    <li class="icon-list-item">
+                        <a href="" class="team-member-link">
+                            <svg class="team-member-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-list-item">
+                        <a href="" class="team-member-link">
+                            <svg class="team-member-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-list-item">
+                        <a href="" class="team-member-link">
+                            <svg class="team-member-icon " width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-list-item">
+                        <a href="" class="team-member-link">
+                            <svg class="team-member-icon " width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -555,11 +557,15 @@
                 </div>
                 <div class="modal-field check-wrap">
                     <input class="input-check visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true">
-                    <label class="check-text" for="user-privacy"><span class="check-text-box">
+                    <label class="check-text" for="user-privacy">
+                        <span class="check-text-box">
                             <svg class="check-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-vector-tick"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the<a class="check-link" href=""> Privacy Policy</a></label>
+                        </span>
+                        <div>I accept the terms and conditions of the<a class="check-link" href=""> Privacy Policy</a>
+                        </div>
+                    </label>
                 </div>
                 <button class="modal-form-btn" type="submit">Send</button>
             </form>
